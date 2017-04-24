@@ -17,7 +17,8 @@ public class Main {
     public static void main(String[] args) {
        Fecha f1= new Fecha (01,06,1999,"Martes","Junio");
        Persona p1 = new Persona("Natalia Pabon",f1);
-        
+       f1.ImprBisiesto();
+       p1.ImprFechadeNacimiento();
         
         
     }

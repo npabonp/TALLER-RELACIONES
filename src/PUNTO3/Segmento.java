@@ -10,29 +10,33 @@ package PUNTO3;
  * @author USER
  */
 public class Segmento {
-    private int hora_inicio;
-    private int hora_fin;
 
-    public Segmento(int hora_inicio, int hora_fin) {
+    private String hora_inicio;
+    private String hora_fin;
+
+    public Segmento(String hora_inicio, String hora_fin) {
         this.hora_inicio = hora_inicio;
         this.hora_fin = hora_fin;
     }
 
-    public int getHora_inicio() {
+    public void ImprSegmento() {
+        System.out.println(" inicia a las; " + this.getHora_inicio() + " Termina a las: " + this.getHora_fin());
+    }
+
+    public String getHora_inicio() {
         return hora_inicio;
     }
 
-    public void setHora_inicio(int hora_inicio) {
+    public void setHora_inicio(String hora_inicio) {
         this.hora_inicio = hora_inicio;
     }
 
-    public int getHora_fin() {
+    public String getHora_fin() {
         return hora_fin;
     }
 
-    public void setHora_fin(int hora_fin) {
+    public void setHora_fin(String hora_fin) {
         this.hora_fin = hora_fin;
     }
-    
-    
+
 }

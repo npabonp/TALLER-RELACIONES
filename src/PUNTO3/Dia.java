@@ -12,14 +12,23 @@ import java.util.ArrayList;
  * @author USER
  */
 public class Dia {
+
     private String fecha;
     private String nomDia;
-    private ArrayList <Segmento> segmentod;
+    private ArrayList<Segmento> segmentod;
 
     public Dia(String fecha, String nomDia, ArrayList<Segmento> segmentod) {
         this.fecha = fecha;
         this.nomDia = nomDia;
         this.segmentod = segmentod;
+    }
+
+    public void ImprDia() {
+        System.out.println("En el dia " + this.getNomDia() + " con fecha " + this.getFecha()+ "Los segmentos son");
+        for (int i = 0; i < segmentod.size(); i++) {
+            segmentod.get(i).ImprSegmento();
+        }
+
     }
 
     public String getFecha() {
@@ -45,10 +54,5 @@ public class Dia {
     public void setSegmentod(ArrayList<Segmento> segmentod) {
         this.segmentod = segmentod;
     }
-    
-    
 
-   
-    
-    
 }

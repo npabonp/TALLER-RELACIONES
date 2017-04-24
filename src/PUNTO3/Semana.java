@@ -20,7 +20,34 @@ public class Semana {
     }
 
     public int SegmentosLibres() {
-        return 0;
+        int segocupados = 0;
+        for (int i = 0; i < 5; i++) {
+            segocupados = segocupados + diasHabiles[i].getSegmentod().size();
+        }
+        return 45 - segocupados;
+    }
+
+    public void ImprSemana() {
+        System.out.println("En la semana numero "+this.getNumSemana()+"La programacion diaria es:");
+        for (int i = 0; i < diasHabiles.length; i++) {
+            diasHabiles[i].ImprDia();
+        }
+    }
+
+    public int getNumSemana() {
+        return numSemana;
+    }
+
+    public void setNumSemana(int numSemana) {
+        this.numSemana = numSemana;
+    }
+
+    public Dia[] getDiasHabiles() {
+        return diasHabiles;
+    }
+
+    public void setDiasHabiles(Dia[] diasHabiles) {
+        this.diasHabiles = diasHabiles;
     }
 
 }

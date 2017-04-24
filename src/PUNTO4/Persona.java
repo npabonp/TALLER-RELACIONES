@@ -37,6 +37,6 @@ public class Persona {
 
     public void ImprFechadeNacimiento() {
         System.out.println(this.getNombre() + " nació el ");
-        System.out.println(this.fecha_nacim.ImprFecha());
+        this.fecha_nacim.ImprFecha();
     }
 }
